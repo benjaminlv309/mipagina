@@ -1,0 +1,102 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0e6;
+}
+header {
+    background-color: #6b4f2a;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+nav {
+    display: flex;
+    background-color: #3e2f1c;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    display: block;
+    color: white;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #a67c52;
+}
+main {
+    padding: 30px 60px;
+    margin-bottom: 50px;
+}
+footer {
+    background-color: #3e2f1c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor-imagenes-linea {
+    text-align: center;
+}
+.miniatura {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    border: 2px solid #a67c52;
+}
+
+.desplegable {
+    position: relative;
+    display: inline-block;
+}
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5f0e6;
+    min-width: 300px;
+    border: 2px solid #a67c52;
+    z-index: 10;
+}
+.contenido-desplegable img {
+    width: 300px;
+    height: 200px;
+    border: 0;
+    margin: 0;
+}
+.desplegable:hover .contenido-desplegable {
+    display: block;
+}
+.descripcion {
+    padding: 10px;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+td, th {
+    border: 1px solid #a67c52;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #e8dfcd;
+}
+tr:hover {
+    background-color: #d4c5ab;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #6b4f2a;
+    color: white;
+}
